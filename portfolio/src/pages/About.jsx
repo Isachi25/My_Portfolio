@@ -1,9 +1,11 @@
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import sachiImage from '../static/images/sachi.jpeg'; // imported image
 
 function About() {
   return (
     <section id="about" className="about-section" aria-labelledby="about-title">
       <div className="about-wrapper">
+        {/* Text Section */}
         <div className="about-text">
           <h2 id="about-title">About Me</h2>
           <p>
@@ -22,6 +24,7 @@ function About() {
             community.
           </p>
 
+          {/* Footer / Contact Section */}
           <footer className="about-footer">
             <h3>Get in Touch</h3>
             <p>
@@ -49,9 +52,10 @@ function About() {
           </footer>
         </div>
 
+        {/* Image Section */}
         <div className="about-image-container">
           <img
-            src="/images/sachi.jpeg"
+            src={sachiImage} // use imported image
             alt="Portrait of Sharon Masiga"
             className="about-image"
           />
